@@ -4,6 +4,8 @@ Data relating to the interleukin-36 receptor antagonist protein (IL-36RA) in com
 
 `SummaryTables.xlsx` - Excel workbook summarising the breakdown and annotation of the different missense variants available in the databases.
 
+`millie_files/*` - folder containing all of Millie's Data files.
+
 ## Data files
 
 `il36ra.pdb` - PDB file with structure coordinates for L-36RA+IL1RL2 complex

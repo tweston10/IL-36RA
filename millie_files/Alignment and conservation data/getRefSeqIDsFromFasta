@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#awk '/^>/{ split($0, a, " "); print a[1] >> "IL36ra_max500_8iterations_Name_Species.txt" }' IL36ra_max500_8iterations.txt
+
+awk '{ if(/^>/){ n=split($0, a, " "); header=""; \
+	for(i = 2; i<=n; ++i ){ header = header""a[i]" " }; \
+	print ">"header >> "IL36ra_max500_7iterations_renamed.txt" } \
+	else { print >>  "IL36ra_max500_7iterations_renamed.txt" } }' \
+	IL36ra_max500_7iterations.txt
+ 
